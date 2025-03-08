@@ -14,7 +14,7 @@ const About = () => {
   return (
     <>  
       <Navbar />
-      <div className="mt-32 flex justify-center items-center min-h-screen bg-gray-100">
+      <div className="mt-32 flex justify-center items-center min-h-screen">
         <div
           className="cont bg-white p-8 rounded-lg shadow"
           data-aos="fade-right"
@@ -41,7 +41,7 @@ We partner with startups, existing businesses, and educational institutions to e
       </div>
 
 {/* second div */}
-      <div className="mt-32 flex justify-center items-center min-h-screen  bg-gray-100">
+      <div className="mt-32 flex justify-center items-center min-h-screen  ">
         <div
           className="cont bg-white p-8 rounded-lg shadow"
           data-aos="fade-right"
