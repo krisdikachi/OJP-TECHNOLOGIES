@@ -77,7 +77,7 @@ export default function Home() {
           <h3 className="text-xl sm:text-4xl mb-4 text-ojpPrimary font-bold">
             OJP TECHNOLOGIES LTD
           </h3>
-          <p className="text-base sm:text-lg text-white leading-relaxed mb-4">
+          <p className="text-base sm:text-lg text-ojpPrimary leading-relaxed mb-4">
             <span className="font-semibold text-ojpPrimary">OJP TECHNLOGIES</span> Welcome to OJP Technologies Ltd., a leading provider 
             of innovative tech solutions and education. OJP stands for 
             Objectively Judged Potential—a principle that defines our journey and purpose. 
