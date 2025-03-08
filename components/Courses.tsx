@@ -10,6 +10,7 @@ import Image from 'next/image';
 
 export default function FacultiesSection() {
   return (
+    
     <section className="py-20">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center mb-10">
