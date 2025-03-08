@@ -71,14 +71,14 @@ export default function Home() {
 
       <div className="flex justify-center items-center min-h-screen">
         <div
-          className="cont  p-8 rounded-lg "
+          className="cont bg-ojpSecondary p-8 rounded-lg "
           data-aos="fade-up"
         >
           <h3 className="text-xl sm:text-4xl mb-4 text-ojpPrimary font-bold">
             OJP TECHNOLOGIES LTD
           </h3>
           <p className="text-base sm:text-lg text-white leading-relaxed mb-4">
-            <span className="font-semibold text-ojpSecondary">OJP TECHNLOGIES</span> Welcome to OJP Technologies Ltd., a leading provider 
+            <span className="font-semibold text-ojpPrimary">OJP TECHNLOGIES</span> Welcome to OJP Technologies Ltd., a leading provider 
             of innovative tech solutions and education. OJP stands for 
             Objectively Judged Potential—a principle that defines our journey and purpose. 
             Founded with a vision to bridge the gap between technological innovation and practical 
@@ -97,7 +97,7 @@ export default function Home() {
       </div>
       <div className="pHeader"><header className="text-4xl text-center font-bold text-ojpPrimary">Our Services</header>
 
-        <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
+        <div className="flex justify-center items-center min-h-screen  p-4">
           <div className="relative w-full max-w-5xl bg-white shadow-lg rounded-lg overflow-hidden p-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 divide-gray-300 lg:divide-x lg:divide-y">
 

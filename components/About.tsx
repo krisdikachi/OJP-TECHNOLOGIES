@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div
-        className="cont bg-white p-8 rounded-lg shadow"
+        className="cont  p-8 rounded-lg shadow"
         data-aos="fade-up"
       >
         <h3 className="text-xl sm:text-4xl mb-4 text-white">

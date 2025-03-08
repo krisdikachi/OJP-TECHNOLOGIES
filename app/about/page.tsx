@@ -16,7 +16,7 @@ const About = () => {
       <Navbar />
       <div className="mt-32 flex justify-center items-center min-h-screen">
         <div
-          className="cont  p-8 rounded-lg shadow"
+          className="cont bg-ojpSecondary p-8 rounded-lg shadow"
           data-aos="fade-right"
         >
           <h3 className="text-xl sm:text-4xl mb-4 text-white">
@@ -43,7 +43,7 @@ We partner with startups, existing businesses, and educational institutions to e
 {/* second div */}
       <div className="mt-32 flex justify-center items-center min-h-screen  ">
         <div
-          className="cont  p-8 rounded-lg shadow"
+          className="cont bg-ojpSecondary p-8 rounded-lg shadow"
           data-aos="fade-right"
         >
           <Image
