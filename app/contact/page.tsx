@@ -1,6 +1,6 @@
 "use client";
 
-import Footer from '@/components/Footer';
+
 import Navbar from '@/components/Navbar';
 import React, { useState } from 'react';
 
@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
             <header className="text-4xl text-center font-bold text-ojpPrimary">Locate Us</header>
             
 
-            {/* <Footer/> */}
+            
         </>
     );
 };

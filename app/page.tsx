@@ -6,7 +6,7 @@ import Script from "next/script";
 import Link from "next/link";
 import FacultiesSection from "../components/Courses";
 import Contact from "./contact/page";
-import Footer from "@/components/Footer";
+
 import Head from "next/head";
 
 
@@ -171,7 +171,7 @@ export default function Home() {
                     referrerPolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-      {/* <Footer /> */}
+
       
       <Script src="/custom-script.js" strategy="lazyOnload" />
     </>
