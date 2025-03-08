@@ -71,7 +71,7 @@ export default function Home() {
 
       <div className="flex justify-center items-center min-h-screen">
         <div
-          className="cont bg-white p-8 rounded-lg "
+          className="cont  p-8 rounded-lg "
           data-aos="fade-up"
         >
           <h3 className="text-xl sm:text-4xl mb-4 text-ojpPrimary font-bold">
