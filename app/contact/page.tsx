@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-10">
                         <h2 className="text-4xl font-bold text-ojpPrimary mb-4">Contact Us</h2>
-                        <p className="text-lg text-ojpSecondary">We'd love to hear from you! Please fill out the form below to get in touch with us.</p>
+                        <p className="text-lg text-ojpSecondary">We&apos;d love to hear from you! Please fill out the form below to get in touch with us.</p>
                     </div>
                     <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
                         <form onSubmit={handleSubmit}>
