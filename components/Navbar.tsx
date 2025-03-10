@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out ${
+      className={`navHead w-full fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       } bg-ojpPrimary border-b-4 border-ojpSecondary`}
     >
@@ -37,6 +37,7 @@ const Navbar = () => {
               width={300}
               height={90}
               priority
+              className="cursor-cell"
             />
           </Link>
         </div>
@@ -114,7 +115,7 @@ const Navbar = () => {
 
           {/* Additional Content (Optional) */}
           <div className="mt-auto">
-            <p className="text-sm text-ojpSecondary opacity-75">© 2025 Your Company</p>
+            <p className="text-sm text-ojpSecondary opacity-75">© 2025 OJP TECHNOLOGIES</p>
           </div>
         </div>
       </div>

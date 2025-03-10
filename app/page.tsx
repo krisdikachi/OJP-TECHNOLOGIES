@@ -24,7 +24,7 @@ export default function Home() {
       <div className=" heroSection relative flex flex-col md:flex-row items-center justify-center min-h-screen bg-white">
         {/* Left Side - Static Header */}
         <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center p-8 md:p-16 paragraphDiv bg-opacity-20">
-          <h1 className="text-4xl md:text-6xl font-bold text-ojpPrimary ">
+          <h1 className="text-4xl md:text-6xl font-bold text-ojpPrimary mt-24">
             OJP~ &quot;Where Technology Meets Innovation
 
           </h1>
@@ -69,7 +69,7 @@ export default function Home() {
       </div>
 
 
-      <div className="flex justify-center items-center min-h-screen">
+      <div className="flex justify-center items-center min-h-screen mt-24">
         <div
           className="cont bg-ojpSecondary p-8 rounded-lg "
           data-aos="fade-up"
@@ -95,7 +95,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="pHeader"><header className="text-4xl text-center font-bold text-ojpPrimary">Our Services</header>
+      <div className="pHeader"><header className="text-4xl text-center font-bold text-ojpPrimary mt-24">Our Services</header>
 
         <div className="flex justify-center items-center min-h-screen  p-4">
           <div className="relative w-full max-w-5xl bg-white shadow-lg rounded-lg overflow-hidden p-6">
