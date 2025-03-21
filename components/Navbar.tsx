@@ -24,9 +24,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navHead w-full fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out ${
+      className={`navHead w-full fixed top-0  z-50 transition-transform duration-300 ease-in-out ${
         isVisible ? "translate-y-0" : "-translate-y-full"
-      } bg-ojpPrimary border-b-4 border-ojpSecondary`}
+      } bg-white border-b-4 border-ojpSecondary`}
     >
       <div className="container flex justify-between items-center py-4 px-6">
         <div className="text-ojpSecondary text-lg font-bold">
@@ -34,10 +34,10 @@ const Navbar = () => {
             <Image
               src="/darkLogoTrans.png"
               alt="Logo"
-              width={300}
+              width={340}
               height={90}
               priority
-              className="cursor-cell"
+              className="pointer"
             />
           </Link>
         </div>
@@ -68,6 +68,12 @@ const Navbar = () => {
           <Link href="/" className="hover:text-ojpSecondary transition">Home</Link>
           <Link href="/about" className="hover:text-ojpSecondary transition">About</Link>
           <Link href="/contact" className="hover:text-ojpSecondary transition">Contact</Link>
+          <Link href="/contact" className="hover:text-ojpSecondary transition">Our Mission</Link>
+          <Link href="/mission" className="hover:text-ojpSecondary transition">
+            <button className="bg-ojpSecondary text-sm text-white p-1 -mt-2 rounded-md hover:transform transition">
+              Register Now
+            </button>
+          </Link>
         </div>
       </div>
 

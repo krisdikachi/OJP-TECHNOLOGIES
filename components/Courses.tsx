@@ -29,7 +29,7 @@ export default function FacultiesSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="relative w-full h-[80vh]">
                 <Image
-                  src="/cyber.jpg"
+                  src="/cyber2.jpg"
                   alt="faculty1"
                   layout="fill"
                   objectFit="cover"
@@ -38,9 +38,9 @@ export default function FacultiesSection() {
               </div>
               <div className="flex flex-col justify-center items-center p-10">
                 <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">CYBERSECURITY</h3>
-                <p className="text-lg text-ojpPrimary">Become a cybersecurity expert</p>
-                <p className="text-lg text-ojpPrimary">Dive into cybersecurity fundamentals and advance security measures</p>
-                <Link href="/contact">
+                <p className="text-lg text-white">Become a cybersecurity expert</p>
+                <p className="text-lg text-white">Dive into cybersecurity fundamentals and advance security measures</p>
+                <Link href="/contact" className='mt-4'>
                   <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
                     Apply Now
                   </span>
@@ -62,9 +62,9 @@ export default function FacultiesSection() {
               </div>
               <div className="flex flex-col justify-center items-center p-10">
                 <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">Data Science</h3>
-                <p className="text-lg text-ojpPrimary">Master data analysis, machine learning and AI with tools like:</p>
-                <p className="text-lg text-ojpPrimary">Python, R and SQL to drive business intelligence and innovation</p>
-                <Link href="/contact">
+                <p className="text-lg text-white">Master data analysis, machine learning and AI with tools like:</p>
+                <p className="text-lg text-white">Python, R and SQL to drive business intelligence and innovation</p>
+                <Link href="/contact" className='mt-4'>
                   <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
                     Apply Now
                   </span>
@@ -86,9 +86,9 @@ export default function FacultiesSection() {
               </div>
               <div className="flex flex-col justify-center items-center p-10">
                 <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">Data Analytics</h3>
-                <p className="text-lg text-ojpPrimary">Learn to interpret and visualize data using tools like</p>
-                <p className="text-lg text-ojpPrimary">Tableau, Power BI, and Excel to make informed business decisions</p>
-                <Link href="/contact">
+                <p className="text-lg text-white">Learn to interpret and visualize data using tools like</p>
+                <p className="text-lg text-white">Tableau, Power BI, and Excel to make informed business decisions</p>
+                <Link href="/contact" className='mt-4'>
                   <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
                     Apply Now
                   </span>
@@ -110,9 +110,9 @@ export default function FacultiesSection() {
               </div>
               <div className="flex flex-col justify-center items-center p-10">
                 <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">Apple App Development</h3>
-                <p className="text-lg text-ojpPrimary">Develop innovative iOS apps using</p>
-                <p className="text-lg text-ojpPrimary">Swift and Xcode, ensuring seamless User Experience</p>
-                <Link href="/contact">
+                <p className="text-lg text-white">Develop innovative iOS apps using</p>
+                <p className="text-lg text-white">Swift and Xcode, ensuring seamless User Experience</p>
+                <Link href="/contact" className='mt-4'>
                   <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
                     Apply Now
                   </span>
@@ -135,9 +135,9 @@ export default function FacultiesSection() {
               </div>
               <div className="flex flex-col justify-center items-center p-10">
                 <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">Android App Development</h3>
-                <p className="text-lg text-ojpPrimary">Gain proficiency in building scalable Android apps</p>
-                <p className="text-lg text-ojpPrimary">using JAVA and Kotlin</p>
-                <Link href="/contact">
+                <p className="text-lg text-white">Gain proficiency in building scalable Android apps</p>
+                <p className="text-lg text-white">using JAVA and Kotlin</p>
+                <Link href="/contact" className='mt-4'>
                   <span className="mt-4 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
                     Apply Now
                   </span>
@@ -160,9 +160,9 @@ export default function FacultiesSection() {
               </div>
               <div className="flex flex-col justify-center items-center p-10">
                 <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">Game App Development</h3>
-                <p className="text-lg text-ojpPrimary">Design and develop captivating moBile games using UNITY</p>
-                <p className="text-lg text-ojpPrimary">and Unreal Engine</p>
-                <Link href="/contact">
+                <p className="text-lg text-white">Design and develop captivating moBile games using UNITY</p>
+                <p className="text-lg text-white">and Unreal Engine</p>
+                <Link href="/contact" className='mt-4'>
                   <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
                     Apply Now
                   </span>
@@ -186,9 +186,9 @@ export default function FacultiesSection() {
               </div>
               <div className="flex flex-col justify-center items-center p-10">
                 <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">Robotics and AI</h3>
-                <p className="text-lg text-ojpPrimary">Explre the cutting edge of robotics and AI building </p>
-                <p className="text-lg text-ojpPrimary">intelligent system for various application</p>
-                <Link href="/contact">
+                <p className="text-lg text-white">Explre the cutting edge of robotics and AI building </p>
+                <p className="text-lg text-white">intelligent system for various application</p>
+                <Link href="/contact" className='mt-4'>
                   <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
                     Apply Now
                   </span>
@@ -210,9 +210,9 @@ export default function FacultiesSection() {
               </div>
               <div className="flex flex-col justify-center items-center p-10">
                 <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">Roofing Technology</h3>
-                <p className="text-lg text-ojpPrimary">Develop innovative iOS apps using</p>
-                <p className="text-lg text-ojpPrimary">Swift and Xcode, ensuring seamless User Experience</p>
-                <Link href="/contact">
+                <p className="text-lg text-white">Develop innovative iOS apps using</p>
+                <p className="text-lg text-white">Swift and Xcode, ensuring seamless User Experience</p>
+                <Link href="/contact" className='mt-4'>
                   <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
                     Apply Now
                   </span>
@@ -235,9 +235,9 @@ export default function FacultiesSection() {
               </div>
               <div className="flex flex-col justify-center items-center p-10">
                 <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">Website Development</h3>
-                <p className="text-lg text-ojpPrimary">Master Frontend and Backend technologies</p>
-                <p className="text-lg text-ojpPrimary">to develop dynamic and responsive websites</p>
-                <Link href="/contact">
+                <p className="text-lg text-white">Master Frontend and Backend technologies</p>
+                <p className="text-lg text-white">to develop dynamic and responsive websites</p>
+                <Link href="/contact" className='mt-4'>
                   <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
                     Apply Now
                   </span>
@@ -259,12 +259,12 @@ export default function FacultiesSection() {
                   className="rounded-md"
                 />
               </div>
-              <div className="flex flex-col justify-center items-center">
+              <div className="flex flex-col justify-center items-center p-10">
                 <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">Product Design (UI/UX)</h3>
-                <p className="text-lg text-ojpPrimary">Learn the principle of user centered design to</p>
-                <p className="text-lg text-ojpPrimary">create intutive and engaging products</p>
-                <Link href="/contact">
-                  <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
+                <p className="text-lg text-white">Learn the principle of user centered design to</p>
+                <p className="text-lg text-white">create intutive and engaging products</p>
+                <Link href="/contact" className='mt-4'>
+                  <span className=" px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
                     Apply Now
                   </span>
                 </Link>

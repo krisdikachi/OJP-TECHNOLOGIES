@@ -4,6 +4,7 @@
 import Navbar from "../components/Navbar";
 import Script from "next/script";
 import Link from "next/link";
+
 import FacultiesSection from "../components/Courses";
 import Contact from "./contact/page";
 
@@ -13,7 +14,7 @@ import Head from "next/head";
 export default function Home() {
   return (
     <>
-   <Head>
+      <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -21,72 +22,86 @@ export default function Home() {
 
 
       {/* Hero Section with Static Header & Video */}
-      <div className=" heroSection relative flex flex-col md:flex-row items-center justify-center min-h-screen bg-white">
-        {/* Left Side - Static Header */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center p-8 md:p-16 paragraphDiv bg-opacity-20">
-          <h1 className="text-4xl md:text-6xl font-bold text-ojpPrimary mt-24">
-            OJP~ &quot;Where Technology Meets Innovation
-
+      <section className="bg-ojpSecondary mt-36 flex items-center w-[100%] justify-between px-4 sm:px-12 ">
+        {/* Left Section */}
+        <div className="text-left  max-w-l space-y-4 ">
+          <div className="block bg-ojpPrimary text-white w-fit py-2 px-2 rounded-lg text-sm font-semibold ">
+            OJP Tech Quiz Cohort 1.0
+          </div>
+          <h1 className="text-3xl sm:text-3xl lg:text-4xl font-bold text-white">
+            Welcome to <br />
+            <span className="text-ojpPrimary">OJP Technologies Ltd</span> <br />
+            Where Innovation Meets Excellence!
           </h1>
-          <p className="mt-3 text-lg text-ojpSecondary bg-opacity-50 rounded-md bg-ojpPrimary">
-            & Innovation Meets Excellence&quot;
-
-
-
-
-
-
+          <p className="text-white text-base sm:text-lg font-light max-w-md">
+            We are committed to delivering high-quality services and courses that meet the evolving needs of our clients.
           </p>
-        </div>
+          <div className="btnDiv flex space-x-4 mt-4">
+            <button className="ctnBtn bg-ojpPrimary text-gray-800 px-6 py-3 text-lg font-medium rounded-lg shadow-lg hover:bg-green-400 transition ease-in-out duration-200">
+              Get Started
+            </button>
 
-        {/* Right Side - Video */}
-        <div className="  w-full md:w-1/2 block justify-center items-center p-8">
-          <video
-            className="w-full max-w-lg rounded-lg shadow-lg"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source src="/ojpvideo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video><br />
-          <div className="buttonDiv flex flex-col sm:flex-row justify-center items-center  space-y-4 sm:space-y-0 sm:space-x-4">
-            <a
-              href="mailto:support@ojptechnologiesltd.com"
-              className="bg-ojpPrimary text-white py-2 px-4 rounded-md shadow-md hover:bg-ojpSecondary transition"
-            >
-              Contact Us via Email
-            </a>
-            <a
-              href="https://wa.me/+2349064955374?text=Hello%20OJP%20TECHNOLOGIES%20I%20came%20from%20your%20website%20and%20would%20like%20to%20transact%20."
-              className="bg-ojpSecondary text-white py-2 px-4 rounded-md shadow-md hover:bg-ojpPrimary transition  sm:mt-0"
-            >
-              Contact Us via WhatsApp
-            </a>
+            <button className="MsnBtn bg-white text-gray-800 px-6 py-3 text-lg font-medium rounded-lg shadow-lg hover:bg-white transition ease-in-out duration-2000">
+              Our Mission
+            </button>
           </div>
         </div>
-      </div>
+
+        {/* Right Section - Image */}
+        <div className="hidden lg:block">
+          <img
+            src="/learning.jpg"
+            alt="Courses illustration"
+            className="w-[450px] h-[450px] object-contain"
+          />
+        </div>
+      </section>
+
+
+
+
+      <section className="bg-ojpSecondary py-20">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            {/* Left Section - Video */}
+            <div className="w-full md:w-1/2 p-4">
+            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2F61567193102465%2Fvideos%2F1632919584766913%2F&show_text=false&width=560&t=0"  height="314" className="w-[100%] border-none overflow:hidden" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" ></iframe>            </div>
+
+            {/* Right Section - Text */}
+            <div className="w-full md:w-1/2 p-4 text-white">
+              <h2 className="text-3xl font-bold mb-4">Our Introduction Video</h2>
+              <p className="text-lg mb-4">
+                Watch our introduction video to learn more about OJP Technologies Ltd. and how we are driving innovation and excellence in the tech industry.
+              </p>
+              <p className="text-lg">
+                Our team of experts is committed to delivering high-quality services and courses that meet the evolving needs of our clients. Join us on our journey to bridge the gap between technological innovation and practical business applications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* space */}
 
 
       <div className="flex justify-center items-center min-h-screen mt-24">
         <div
-          className="cont bg-ojpSecondary p-8 rounded-lg "
+          className="cont bg-ojpSecondary p-8 "
           data-aos="fade-up"
         >
-          <h3 className="text-xl sm:text-4xl mb-4 text-ojpPrimary font-bold">
+          <h3 className="text-xl sm:text-4xl mb-4 text-ojpPrimary">
             OJP TECHNOLOGIES LTD
           </h3>
-          <p className="text-base sm:text-lg text-ojpPrimary leading-relaxed mb-4">
-            <span className="font-semibold text-ojpPrimary">OJP TECHNLOGIES</span> Welcome to OJP Technologies Ltd., a leading provider 
-            of innovative tech solutions and education. OJP stands for 
-            Objectively Judged Potential—a principle that defines our journey and purpose. 
-            Founded with a vision to bridge the gap between technological innovation and practical 
-            business applications, we objectively assess and unlock the potential in every project, partnership, and individual we engage with. 
+          <p className="text-base sm:text-lg text-white leading-relaxed mb-4">
+            <span className=" text-white">OJP TECHNLOGIES</span> Welcome to OJP Technologies Ltd., a leading provider
+            of innovative tech solutions and education. OJP stands for
+            Objectively Judged Potential—a principle that defines our journey and purpose.
+            Founded with a vision to bridge the gap between technological innovation and practical
+            business applications, we objectively assess and unlock the potential in every project, partnership, and individual we engage with.
             We have grown into a trusted partner for businesses and individuals seeking excellence in the digital realm. We are passionate about equipping businesses
-             and individuals with the skills and knowledge to thrive in an ever-evolving, tech-driven world
+            and individuals with the skills and knowledge to thrive in an ever-evolving, tech-driven world
 
-&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
             <Link href="/about">
               <span className="text-ojpPrimary font-semibold hover:underline">
                 Read More...
@@ -107,16 +122,16 @@ export default function Home() {
                   className="w-24 h-24 mb-2"></iframe>
                 <h4 className="text-lg font-semibold">Fintech Apps</h4>
                 <p className="text-sm text-gray-700 text-center">
-        Build secure and innovative fintech applications for mobile banking, payments, and financial management. 
+                  Build secure and innovative fintech applications for mobile banking, payments, and financial management.
                 </p>
               </div>
 
               {/* Course 2 */}
               <div className="flex flex-col justify-center items-center p-4 border-b border-gray-300">
-              <iframe src="https://lottie.host/embed/c78904b1-8d6c-4916-9718-975e955b36b1/LHC3eePquP.lottie"></iframe>
+                <iframe src="https://lottie.host/embed/c78904b1-8d6c-4916-9718-975e955b36b1/LHC3eePquP.lottie"></iframe>
                 <h4 className="text-lg font-semibold">Human Resource Solutions </h4>
                 <p className="text-sm text-gray-700 text-center">
-                 Optimize your human resource strategies with our expert consulting services, covering talent acquisition, training, and development. 
+                  Optimize your human resource strategies with our expert consulting services, covering talent acquisition, training, and development.
                 </p>
               </div>
 
@@ -126,7 +141,7 @@ export default function Home() {
                   className="w-24 h-24 mb-2"></iframe>
                 <h4 className="text-lg font-semibold">School Portal</h4>
                 <p className="text-sm text-gray-700 text-center">
-                Develop a comprehensive school portal for efficient management of student data, communication, and online learning
+                  Develop a comprehensive school portal for efficient management of student data, communication, and online learning
                 </p>
               </div>
 
@@ -136,21 +151,21 @@ export default function Home() {
                   className="w-24 h-24 mb-2"></iframe>
                 <h4 className="text-lg font-semibold">Machine Learning </h4>
                 <p className="text-sm text-gray-700 text-center">
-                 Build intelligent systems. Develop custom machine learning models for predictive analytics, data-driven decision-making, and automation.                </p>
+                  Build intelligent systems. Develop custom machine learning models for predictive analytics, data-driven decision-making, and automation.                </p>
               </div>
 
 
               <div className="flex flex-col justify-center items-center p-4 lg:border-t">
-              <iframe src="https://lottie.host/embed/d00e9885-82aa-402c-84e0-16dbe0282d67/yJGRAxHXRG.lottie"></iframe>                <h4 className="text-lg font-semibold">HRM Systems  </h4>
+                <iframe src="https://lottie.host/embed/d00e9885-82aa-402c-84e0-16dbe0282d67/yJGRAxHXRG.lottie"></iframe>                <h4 className="text-lg font-semibold">HRM Systems  </h4>
                 <p className="text-sm text-gray-700 text-center">
-                 Streamline your HR processes with our efficient HRM system, covering payroll, recruitment, performance management, and more.          </p>
+                  Streamline your HR processes with our efficient HRM system, covering payroll, recruitment, performance management, and more.          </p>
               </div>
 
               <div className="flex flex-col justify-center items-center p-4 lg:border-t">
-              <iframe src="https://lottie.host/embed/915e0e10-0495-48ef-9f6d-9799def2daa6/koVcwtHGVS.lottie"></iframe>
+                <iframe src="https://lottie.host/embed/915e0e10-0495-48ef-9f6d-9799def2daa6/koVcwtHGVS.lottie"></iframe>
                 <h4 className="text-lg font-semibold">Custom Software & App Development </h4>
                 <p className="text-sm text-gray-700 text-center">
-                 We develop powerful, scalable, and user-friendly applications tailored to meet the specific needs of businesses and individuals.          </p>
+                  We develop powerful, scalable, and user-friendly applications tailored to meet the specific needs of businesses and individuals.          </p>
               </div>
             </div>
           </div>
@@ -160,21 +175,57 @@ export default function Home() {
 
       <FacultiesSection />
 
-<Contact />
-<div className=" mt-10">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63488.38991042998!2d6.864330570710713!3d5.991381077435929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLocation%3A%20Umudim%2C%20Nnewi%2C%20Anambra%20State%2C%20Along%20Traffic%20Light%20!5e0!3m2!1sen!2sng!4v1741410517967!5m2!1sen!2sng" 
-                    width="100%" 
-                    height="450" 
-                    style={{ border: 0 }} 
-                    // allowFullScreen={true} 
-                    loading="lazy" 
-                    referrerPolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
+      <Contact />
+      <div className=" mt-10">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63488.38991042998!2d6.864330570710713!3d5.991381077435929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLocation%3A%20Umudim%2C%20Nnewi%2C%20Anambra%20State%2C%20Along%20Traffic%20Light%20!5e0!3m2!1sen!2sng!4v1741410517967!5m2!1sen!2sng"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          // allowFullScreen={true} 
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
 
-      
+
       <Script src="/custom-script.js" strategy="lazyOnload" />
     </>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

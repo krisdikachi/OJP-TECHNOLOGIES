@@ -99,7 +99,7 @@ const Contact: React.FC = () => {
                     </div>
                 </div>
             </section>
-            <header className="text-4xl text-center font-bold text-ojpPrimary">Locate Us</header>
+            <header className="text-4xl m-10 text-center font-bold text-ojpPrimary">Locate Us</header>
             
 
             <div className=" mt-10">

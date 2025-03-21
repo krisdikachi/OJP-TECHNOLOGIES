@@ -28,7 +28,7 @@ export default function FacultiesSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="relative w-full h-[80vh]">
                 <Image
-                  src="/cyber.jpg"
+                  src="/cyber2.jpg"
                   alt="faculty1"
                   layout="fill"
                   objectFit="cover"
