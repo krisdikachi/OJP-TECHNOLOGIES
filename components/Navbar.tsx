@@ -86,7 +86,7 @@ const Navbar = () => {
       ></div>
 
       <div
-        className={`fixed top-0 right-0 w-full h-fit bg-ojpPrimary z-50 transform ${
+        className={`fixed top-0 right-0 w-full h-fit bg-white z-50 transform ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
