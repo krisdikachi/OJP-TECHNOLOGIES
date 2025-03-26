@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import Script from "next/script";
 import Link from "next/link";
 import Image from "next/image";
-import FacultiesSection from "../components/Courses";
+// import FacultiesSection from "../components/Courses";
 import Contact from "./contact/page";
 import Footer from "../components/Footer";
 import Head from "next/head";
@@ -42,14 +42,14 @@ export default function Home() {
           </p>
           <div className="btnDiv flex space-x-4 mt-4">
             <Link href="#">
-            <button className="ctnBtn bg-ojpPrimary text-gray-800 px-6 py-3 text-lg font-medium rounded-lg shadow-lg hover:bg-green-400 transition ease-in-out duration-200">
-              Get Started
-            </button>
+              <button className="ctnBtn bg-ojpPrimary text-gray-800 px-6 py-3 text-lg font-medium rounded-lg shadow-lg hover:bg-green-400 transition ease-in-out duration-200">
+                Get Started
+              </button>
             </Link>
             <Link href="/about">
-            <button className="MsnBtn bg-white text-gray-800 px-6 py-3 text-lg font-medium rounded-lg shadow-lg hover:bg-white transition ease-in-out duration-2000">
-             our mission
-            </button>
+              <button className="MsnBtn bg-white text-gray-800 px-6 py-3 text-lg font-medium rounded-lg shadow-lg hover:bg-white transition ease-in-out duration-2000">
+                our mission
+              </button>
             </Link>
           </div>
         </div>
@@ -58,7 +58,7 @@ export default function Home() {
         <div className="hidden lg:block">
           <Image
             width={450}
-            height={450}            
+            height={450}
             src="/Learning.jpg"
             alt="Courses illustration"
             className="w-[450px] h-[450px] object-contain rounded-[50%] border-8 border-white"
@@ -74,7 +74,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between">
             {/* Left Section - Video */}
             <div className="w-full md:w-1/2 p-4">
-            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2F61567193102465%2Fvideos%2F1632919584766913%2F&show_text=false&width=560&t=0"  height="314" className="w-[100%] border-none overflow:hidden" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" ></iframe>            </div>
+              <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2F61567193102465%2Fvideos%2F1632919584766913%2F&show_text=false&width=560&t=0" height="314" className="w-[100%] border-none overflow:hidden" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" ></iframe>            </div>
 
             {/* Right Section - Text */}
             <div className="w-full md:w-1/2 p-4 text-white">
@@ -92,9 +92,7 @@ export default function Home() {
 
       {/* space */}
 
-<button>
-  <Link href="/courses">hello</Link>
-</button>
+
       <div className="flex justify-center items-center min-h-screen mt-6">
         <div
           className="cont bg-ojpSecondary p-8 "
@@ -187,127 +185,142 @@ export default function Home() {
       {/* <FacultiesSection /> */}
 
 
-       <section className="py-20">
-            <div className="container mx-auto">
-              <div className="flex flex-col items-center justify-center mb-10">
-                <h2 className="text-4xl font-bold text-ojpPrimary mb-2">Our Courses</h2>
-                <p className="text-lg text-ojpSecondary p-10">Ready to transform your future? Join us today and discover a world of possibilities in tech. Apply now for our cutting-edge courses and take your career to the next level</p>
+      <section className="py-20 relative">
+        <div className="container mx-auto">
+          <div className="flex flex-col items-center justify-center mb-10">
+            <h2 className="text-4xl font-bold text-ojpPrimary mb-2">Our Courses</h2>
+            <p className="text-lg text-ojpSecondary p-10">Ready to transform your future? Join us today and discover a world of possibilities in tech. Apply now for our cutting-edge courses and take your career to the next level</p>
+          </div>
+
+          <Swiper
+            modules={[Navigation, Pagination]}
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            className="mySwiper bg-black p-8 rounded-md shadow"
+          >
+            <SwiperSlide>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="relative w-full h-[80vh]">
+                  <Image
+                    src="/cyber2.jpg"
+                    alt="faculty1"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-lg"
+                  />
+                </div>
+                <div className="flex flex-col justify-center items-center p-10">
+                  <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">CYBERSECURITY</h3>
+                  <p className="text-lg text-white">Become a cybersecurity expert</p>
+                  <p className="text-lg text-white">Dive into cybersecurity fundamentals and advance security measures</p>
+                  <Link href="/contact" className='mt-4'>
+                    <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
+                      Apply Now
+                    </span>
+                  </Link>
+                  <Link href="/courses" className=" z-50 seeMoreBtn"> <span className=" px-4 py-3 text-lg font-medium rounded-sm  ">See More...</span></Link>
+
+
+                </div>
+
               </div>
-              <Swiper
-                modules={[Navigation, Pagination]}
-                spaceBetween={30}
-                slidesPerView={1}
-                navigation
-                pagination={{ clickable: true }}
-                className="mySwiper bg-black p-8 rounded-md shadow"
-              >
-                <SwiperSlide>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="relative w-full h-[80vh]">
-                      <Image
-                        src="/cyber2.jpg"
-                        alt="faculty1"
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-lg"
-                      />
-                    </div>
-                    <div className="flex flex-col justify-center items-center p-10">
-                      <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">CYBERSECURITY</h3>
-                      <p className="text-lg text-white">Become a cybersecurity expert</p>
-                      <p className="text-lg text-white">Dive into cybersecurity fundamentals and advance security measures</p>
-                      <Link href="/contact" className='mt-4'>
-                        <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
-                          Apply Now
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                </SwiperSlide>
-      
-             
-      
-      
-                <SwiperSlide>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="relative w-full h-[80vh]">
-                      <Image
-                        src="/robotics.jpg"
-                        alt="faculty2"
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-md"
-                      />
-                    </div>
-                    <div className="flex flex-col justify-center items-center p-10">
-                      <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">Robotics and AI</h3>
-                      <p className="text-lg text-white">Explre the cutting edge of robotics and AI building </p>
-                      <p className="text-lg text-white">intelligent system for various application</p>
-                      <Link href="/contact" className='mt-4'>
-                        <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
-                          Apply Now
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                </SwiperSlide>
-      
-                <SwiperSlide>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="relative w-full h-[80vh]">
-                      <Image
-                        src="/roofing.jpg"
-                        alt="faculty2"
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-md"
-                      />
-                    </div>
-                    <div className="flex flex-col justify-center items-center p-10">
-                      <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">Roofing Technology</h3>
-                      <p className="text-lg text-white">Develop innovative iOS apps using</p>
-                      <p className="text-lg text-white">Swift and Xcode, ensuring seamless User Experience</p>
-                      <Link href="/contact" className='mt-4'>
-                        <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
-                          Apply Now
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                </SwiperSlide>
-      
-      
-                <SwiperSlide>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="relative w-full h-[80vh]">
-                      <Image
-                        src="/webdev2.jpg"
-                        alt="faculty2"
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-md"
-                      />
-                    </div>
-                    <div className="flex flex-col justify-center items-center p-10">
-                      <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">Website Development</h3>
-                      <p className="text-lg text-white">Master Frontend and Backend technologies</p>
-                      <p className="text-lg text-white">to develop dynamic and responsive websites</p>
-                      <Link href="/contact" className='mt-4'>
-                        <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
-                          Apply Now
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                </SwiperSlide>
-      
-      
-      
-              
-                {/* Add more SwiperSlide components as needed */}
-              </Swiper>
-            </div>
-          </section>
+
+
+            </SwiperSlide>
+
+
+
+
+            <SwiperSlide>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="relative w-full h-[80vh]">
+                  <Image
+                    src="/robotics.jpg"
+                    alt="faculty2"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-md"
+                  />
+                </div>
+                <div className="flex flex-col justify-center items-center p-10">
+                  <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">Robotics and AI</h3>
+                  <p className="text-lg text-white">Explre the cutting edge of robotics and AI building </p>
+                  <p className="text-lg text-white">intelligent system for various application</p>
+                  <Link href="/contact" className='mt-4'>
+                    <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
+                      Apply Now
+                    </span>
+                  </Link>
+                  <Link href="/courses" className=" z-50 seeMoreBtn"> <span className=" px-4 py-3 text-lg font-medium rounded-sm  ">See More...</span></Link>
+
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="relative w-full h-[80vh]">
+                  <Image
+                    src="/roofing.jpg"
+                    alt="faculty2"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-md"
+                  />
+                </div>
+                <div className="flex flex-col justify-center items-center p-10">
+                  <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">Roofing Technology</h3>
+                  <p className="text-lg text-white">Develop innovative iOS apps using</p>
+                  <p className="text-lg text-white">Swift and Xcode, ensuring seamless User Experience</p>
+                  <Link href="/contact" className='mt-4'>
+                    <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
+                      Apply Now
+                    </span>
+                  </Link>
+                  <Link href="/courses" className=" z-50 seeMoreBtn"> <span className=" px-4 py-3 text-lg font-medium rounded-sm  ">See More...</span></Link>
+
+                </div>
+              </div>
+            </SwiperSlide>
+
+
+            <SwiperSlide>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="relative w-full h-[80vh]">
+                  <Image
+                    src="/webdev2.jpg"
+                    alt="faculty2"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-md"
+                  />
+                </div>
+                <div className="flex flex-col justify-center items-center p-10">
+                  <h3 className="text-2xl font-semibold text-ojpPrimary mb-2">Website Development</h3>
+                  <p className="text-lg text-white">Master Frontend and Backend technologies</p>
+                  <p className="text-lg text-white">to develop dynamic and responsive websites</p>
+                  <Link href="/contact" className='mt-4'>
+                    <span className="mt-2 px-4 py-2 bg-ojpPrimary text-white rounded-md hover:bg-ojpSecondary transition">
+                      Apply Now
+                    </span>
+                  </Link>
+
+                  <Link href="/courses" className=" z-50 seeMoreBtn"> <span className=" px-4 py-3 text-lg font-medium rounded-sm  ">See More...</span></Link>
+
+                </div>
+              </div>
+            </SwiperSlide>
+
+
+
+
+            {/* Add more SwiperSlide components as needed */}
+          </Swiper>
+        </div>
+      </section>
 
       <Contact />
       <Footer />

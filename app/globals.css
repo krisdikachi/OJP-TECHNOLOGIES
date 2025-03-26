@@ -137,6 +137,25 @@ height: fit-content;
 .swiper-button-prev::after {
   font-size: 20px !important;
 }
+.seeMoreBtn {
+  background: var(--ojpPrimary);
+  color: var(--ojpSecondary);
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  height: fit-content;
+}
+.seeMoreBtn:hover{
+  background: var(--ojpSecondary);
+  color: var(--ojpPrimary);
+  transition: 0.5s;
+}
 
 /* .footerParent{
   display: block;
@@ -152,5 +171,10 @@ height: fit-content;
 }
 .ctnBtn{
   height: fit-content;
+}
+.seeMoreBtn {
+  bottom: auto;
+  top: 10px;
+  right: 10px;
 }
 }

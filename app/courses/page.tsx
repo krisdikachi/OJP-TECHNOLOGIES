@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
+import Contact from '../contact/page';
 // import Footer from '../components/Footer';
 
 
@@ -16,7 +17,7 @@ export default function FacultiesSection() {
     <>
     <Navbar />
 
-    <section className="py-20">
+    <section className="py-20 mt-32">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center mb-10">
           <h2 className="text-4xl font-bold text-ojpPrimary mb-2">Our Courses</h2>
@@ -280,6 +281,7 @@ export default function FacultiesSection() {
         </Swiper>
       </div>
     </section>
+    <Contact />
      {/* <Footer /> */}
     </>
   );
