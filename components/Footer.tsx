@@ -1,9 +1,11 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-ojpPrimary w-[40%] text-white py-10">
+    <footer className="bg-ojpPrimary w-[100%] text-white py-10 mt-24">
       <div className="  px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Contact Information */}

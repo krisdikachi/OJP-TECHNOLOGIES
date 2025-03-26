@@ -34,8 +34,8 @@ const Navbar = () => {
             <Image
               src="/darkLogoTrans.png"
               alt="Logo"
-              width={340}
-              height={90}
+              width={440}
+              height={100}
               priority
               className="pointer"
             />
@@ -68,7 +68,7 @@ const Navbar = () => {
           <Link href="/" className="hover:text-ojpSecondary transition">Home</Link>
           <Link href="/about" className="hover:text-ojpSecondary transition">About</Link>
           <Link href="/contact" className="hover:text-ojpSecondary transition">Contact</Link>
-          <Link href="/contact" className="hover:text-ojpSecondary transition">Our Mission</Link>
+          <Link href="/about" className="hover:text-ojpSecondary transition">Our Mission</Link>
           <Link href="/mission" className="hover:text-ojpSecondary transition">
             <button className="bg-ojpSecondary text-sm text-white p-1 -mt-2 rounded-md hover:transform transition">
               Register Now

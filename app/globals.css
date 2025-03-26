@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,33 +31,44 @@
 
 
 
-
+@font-face {
+  font-family:  'Gotham Black';
+  src: url(/public/GothamBlack.otf);
+}
 
 body {
   margin: 0;
   padding: 0;
   width: 100%;
 
-  font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Gotham Black', sans-serif; */
+
+
+}
+.ojpName
+{
+  font-family: 'Gotham Black', sans-serif;
+}
+.ojpParagraph{
+  font-family: 'Poppins', sans-serif;
+
 }
 .buttonDiv{
   margin-bottom: -50px;
 }
-@font-face {
-  font-family:  Gotham Black;
-  src: url(/public/Gotham\ Black.otf);
-}
+
 
 .navbarLinks{
   /* display: flex; */
-font-family: monospace;
+
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   background: var(--ojpPrimary);
   color: var(--ojpSecondary);
   font-size: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-decoration: none;
  
 }
@@ -63,7 +77,7 @@ font-family: monospace;
   padding: 10px;
   margin: 10px;
   font-size: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
   position: relative;
   text-decoration: none;
 }
@@ -94,7 +108,7 @@ font-family: monospace;
   background: var(--ojpSecondary);
   color: var(--ojpPrimary);
   font-size: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-decoration: none;
   height: fit-content;
 }
