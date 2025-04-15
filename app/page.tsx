@@ -41,7 +41,7 @@ export default function Home() {
             We are committed to delivering high-quality services and courses that meet the evolving needs of our clients.
           </p>
           <div className="btnDiv flex space-x-4 mt-4">
-            <Link href="#">
+            <Link href="/courses">
               <button className="ctnBtn bg-ojpPrimary text-gray-800 px-6 py-3 text-lg font-medium rounded-lg shadow-lg hover:bg-green-400 transition ease-in-out duration-200">
                 Get Started
               </button>
